@@ -1,0 +1,20 @@
+import { useState } from "react";
+
+import "./App.css";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
+import UserContextProvider from "./context/UserContextProvider";
+
+function App() {
+  return (
+    <UserContextProvider>
+      <div>
+        <h1>React Video for context API</h1>
+        <Profile />
+        <Login />
+      </div>
+    </UserContextProvider>
+  );
+}
+
+export default App;
